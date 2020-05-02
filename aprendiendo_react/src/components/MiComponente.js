@@ -7,22 +7,23 @@ class MiComponente extends React.Component{
 
     let receta = {
       nombre: 'Pizza',
-      ingredientes: ['Tomate','Queso babas', 'jamon cocido' ],
+      ingredientes: ['Parmesano 30 gr','Tomate','Queso babas', 'jamon cocido' ],
       calorias: 400
     };
 
 
       return(
-        //<React.Fragmedddnt>
+        //<React.Fragment>
         <div className= "mi-componente">
         <h1>{'Receta ' + receta.nombre}</h1>
+        <br/>
           <h2>{'Calorias ' + receta.calorias}</h2>
             <ol>
 
             {
               receta.ingredientes.map((ingrediente, i) =>{
                   console.log(ingrediente);
-                  return(f
+                  return(
                     <li key={i}>
                     {ingrediente}
                     </li>
